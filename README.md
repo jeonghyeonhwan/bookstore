@@ -56,11 +56,7 @@ API Root URL
 http://localhost:8080/api/v1
 
 
-http://<JCLOUD_IP>:<PORT>/api/v1
 
-Health Check
-
-http://<JCLOUD_IP>:<PORT>/api/v1/health
 
 
 3. 코드 설치 및 실행 방법
