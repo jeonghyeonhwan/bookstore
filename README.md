@@ -50,10 +50,11 @@ JWT_SECRET (JWT 서명 키)
 배포된 서버의 접속 정보입니다. 포트 리다이렉션 설정에 따라 외부 접속 포트를 사용합니다.
 
 Swagger UI
-
 https://app.swaggerhub.com/apis/jbnu-31b/book_store/1.0.0
 
 API Root URL
+http://localhost:8080/api/v1
+
 
 http://<JCLOUD_IP>:<PORT>/api/v1
 
@@ -61,7 +62,6 @@ Health Check
 
 http://<JCLOUD_IP>:<PORT>/api/v1/health
 
-(참고: 과제 제출 시 <JCLOUD_IP>와 <PORT> 부분은 실제 배포된 주소로 수정하여 제출하시기 바랍니다.)
 
 3. 코드 설치 및 실행 방법
 이 프로젝트는 Gradle을 사용합니다. 터미널에서 아래 명령어를 순서대로 입력하여 빌드 및 실행할 수 있습니다.
@@ -94,7 +94,7 @@ gradlew.bat clean build
 :: 2. JAR 파일 실행
 java -jar build/libs/demo-0.0.1-SNAPSHOT.jar
 4. Postman 컬렉션
-API 테스트를 위한 Postman 컬렉션 파일(Bookstore_API_Collection.json)이 프로젝트 루트(또는 제출 폴더)에 포함되어 있습니다.
+https://jeonghyeonhwan-9288669.postman.co/workspace/%25EC%25A0%2595%25ED%2598%2584%25ED%2599%2598's-Workspace~11ecd958-a0df-4b55-855b-290e61610d00/overview
 
 사용 방법:
 
