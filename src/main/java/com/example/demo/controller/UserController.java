@@ -84,7 +84,6 @@ public class UserController {
             @PathVariable Long userId,
             @RequestHeader("Authorization") String token) {
 
-        // 실제로는 여기서 토큰의 Role이 ADMIN인지 확인하는 로직 필요
 
         HardDeleteUserResponse responsePayload = userService.hardDeleteUser(userId);
 

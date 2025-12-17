@@ -1,25 +1,19 @@
 spring:
   datasource:
-    # --------------------------------------------------------------------------------------
-    # [수정 필요] localhost 대신 127.0.0.1을 기본값으로 지정
     url: jdbc:mysql://${MYSQL_HOST:127.0.0.1}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:bookstore_db}?useSSL=false&useUnicode=true&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
-    # --------------------------------------------------------------------------------------
-
     driver-class-name: com.mysql.cj.jdbc.Driver
-    # 비밀번호는 환경변수(IntelliJ 설정)에서 읽어오도록 유지 (보안 준수)
-    username: ${MYSQL_USERNAME:root}
-    password: ${MYSQL_PASSWORD:root1234!!}
+
+    username: ${MYSQL_USERNAME}
+    password: ${MYSQL_PASSWORD}
 
   jpa:
     show-sql: true
     properties:
       hibernate:
         format_sql: true
-        # 이 경고(HHH90000025)는 무시해도 됩니다. 나중에 지워도 됩니다.
         dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate:
-      ddl-auto: update # 테이블을 미리 만들었으므로 'validate'로 바꾸는 것이 좋습니다.
-      # ddl-auto: validate
+      ddl-auto: update
 
   mvc:
     pathmatch:
